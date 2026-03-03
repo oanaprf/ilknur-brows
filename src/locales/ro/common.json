@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "services": "SERVICII",
+    "about": "DESPRE MINE",
+    "gallery": "GALERIE",
+    "courses": "CURSURI",
+    "bookNow": "PROGRAMEAZĂ"
+  },
+  "hero": {
+    "headline": "În căutarea sprâncenelor perfecte?",
+    "subtitle": "Pasionată de frumusețea naturală, creez sprâncene armonioase care îți pun în valoare trăsăturile.",
+    "cta": "Programează-te acum"
+  },
+  "services": {
+    "label": "SERVICII",
+    "heading": "Contur. Simetrie. Eleganță.",
+    "description": "Fie că îți dorești sprâncene perfecte, gene curbate și vizibil mai dese sau un machiaj semipermanent impecabil, aceste servicii se completează armonios pentru a-ți evidenția frumusețea unică și a-ți oferi încredere zilnic."
+  },
+  "gallery": {
+    "label": "Portofoliu",
+    "heading": "Galerie",
+    "description": "Rezultate reale, transformări reale. Fiecare sprânceană spune o poveste.",
+    "beforeAfter": "Înainte / După",
+    "cta": "Vezi mai mult pe Instagram →"
+  },
+  "reviews": {
+    "label": "Ce spun clienții",
+    "heading": "Recenzii",
+    "rating": "5.0 · 200+ recenzii"
+  },
+  "pricelist": {
+    "label": "Prețuri transparente",
+    "heading": "Listă de prețuri",
+    "description": "Fără costuri ascunse. Ceea ce vezi este ceea ce plătești.",
+    "book": "Rezervă",
+    "mostPopular": "Cel mai popular",
+    "footnote": "Toate prețurile includ o consultație gratuită. Prețurile pentru retușuri se aplică în decurs de 6 luni de la tratamentul inițial."
+  },
+  "courses": {
+    "label": "Educație",
+    "heading": "Învață de la cei mai buni",
+    "description": "Transformă-ți pasiunea pentru sprâncene într-o carieră înfloritoare cu programele practice ale lui Ilknur.",
+    "enroll": "Înscrie-te acum",
+    "bestSeller": "Cel mai vândut"
+  },
+  "footer": {
+    "tagline": "Artă premium pentru sprâncene — unde precizia întâlnește frumusețea.",
+    "quickLinks": "Linkuri rapide",
+    "contact": "Contact",
+    "links": {
+      "services": "Servicii",
+      "pricelist": "Listă prețuri",
+      "gallery": "Galerie",
+      "reviews": "Recenzii",
+      "courses": "Cursuri"
+    },
+    "rights": "Toate drepturile rezervate.",
+    "madeWith": "Făcut cu ♥ pentru sprâncene perfecte"
+  }
+}

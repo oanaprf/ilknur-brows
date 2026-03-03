@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "services": "SERVICES",
+    "about": "ABOUT",
+    "gallery": "GALLERY",
+    "courses": "COURSES",
+    "bookNow": "BOOK NOW"
+  },
+  "hero": {
+    "headline": "In search of perfect brows?",
+    "subtitle": "Passionate about natural beauty, I create harmonious brows that enhance your unique features.",
+    "cta": "Book Now"
+  },
+  "services": {
+    "label": "SERVICES",
+    "heading": "Contour. Symmetry. Elegance.",
+    "description": "Whether you want perfect brows, visibly fuller lashes or flawless semi-permanent makeup, these services complement each other to highlight your unique beauty and give you daily confidence."
+  },
+  "gallery": {
+    "label": "Portfolio",
+    "heading": "Gallery",
+    "description": "Real results, real transformations. Every brow tells a story.",
+    "beforeAfter": "Before / After",
+    "cta": "See More on Instagram →"
+  },
+  "reviews": {
+    "label": "Client Love",
+    "heading": "Reviews",
+    "rating": "5.0 · 200+ reviews"
+  },
+  "pricelist": {
+    "label": "Transparent Pricing",
+    "heading": "Price List",
+    "description": "No hidden fees. What you see is what you pay.",
+    "book": "Book",
+    "mostPopular": "Most Popular",
+    "footnote": "All prices include a free consultation. Touch-up pricing applies within 6 months of initial treatment."
+  },
+  "courses": {
+    "label": "Education",
+    "heading": "Learn from the Best",
+    "description": "Turn your passion for brows into a thriving career with Ilknur's hands-on training programs.",
+    "enroll": "Enroll Now",
+    "bestSeller": "Best Seller"
+  },
+  "footer": {
+    "tagline": "Premium brow artistry — where precision meets beauty.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "links": {
+      "services": "Services",
+      "pricelist": "Pricelist",
+      "gallery": "Gallery",
+      "reviews": "Reviews",
+      "courses": "Courses"
+    },
+    "rights": "All rights reserved.",
+    "madeWith": "Made with ♥ for perfect brows"
+  }
+}
