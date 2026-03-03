@@ -6,21 +6,17 @@ import { useTranslation } from 'react-i18next'
 function SocialIcons() {
   return (
     <div className="flex items-center gap-5">
-      <a href="https://facebook.com" aria-label="Facebook" className="text-white hover:text-white/70 transition-colors">
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-        </svg>
-      </a>
-      <a href="https://instagram.com" aria-label="Instagram" className="text-white hover:text-white/70 transition-colors">
+      <a
+        href="https://www.instagram.com/ilknur_brows?igsh=MXV6cmY5OW1raTBubA=="
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white hover:text-white/70 transition-colors"
+      >
         <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24" aria-hidden="true">
           <rect x="2" y="2" width="20" height="20" rx="5" />
           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-        </svg>
-      </a>
-      <a href="https://tiktok.com" aria-label="TikTok" className="text-white hover:text-white/70 transition-colors">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.5a8.16 8.16 0 004.77 1.53V6.59a4.85 4.85 0 01-1-.1z" />
         </svg>
       </a>
     </div>
@@ -49,7 +45,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="px-7 py-3 bg-white text-[#d8429d] text-xs font-bold rounded-full hover:bg-white/90 transition-colors duration-200 tracking-[0.12em] whitespace-nowrap"
             >
-              {t('nav.bookNow')}
+              {t('hero.cta')}
             </a>
             <SocialIcons />
           </div>
