@@ -45,9 +45,9 @@ export default function HeroSection() {
           <div className="flex items-center gap-6 flex-wrap">
             <a
               href="#calendar"
-              className="px-7 py-3 bg-white text-[#d8429d] text-sm font-semibold rounded-full hover:bg-white/90 transition-all duration-200 whitespace-nowrap shadow-md"
+              className="px-7 py-3 bg-white text-[#d8429d] text-xs font-bold rounded-full hover:bg-white/90 transition-colors duration-200 tracking-[0.12em] whitespace-nowrap"
             >
-              {t('hero.cta')}
+              {t('nav.bookNow')}
             </a>
             <SocialIcons />
           </div>
