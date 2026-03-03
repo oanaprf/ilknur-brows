@@ -34,8 +34,8 @@ export default function PricelistSection() {
               key={name}
               className={`relative flex items-center justify-between p-5 sm:p-6 rounded-2xl transition-all duration-200 ${
                 popular
-                  ? 'bg-[#d8429d] text-white shadow-xl shadow-[#d8429d]/30'
-                  : 'bg-surface hover:shadow-md shadow-sm'
+                  ? 'bg-[#d8429d] text-white shadow-lg shadow-[#d8429d]/20'
+                  : 'bg-surface shadow-md shadow-pink-100/60 hover:shadow-lg hover:shadow-pink-100/80'
               }`}
             >
               {popular && (
@@ -53,23 +53,9 @@ export default function PricelistSection() {
                 </span>
               </div>
 
-              <div className="flex items-center gap-4">
-                <span className={`font-display text-2xl font-bold ${popular ? 'text-white' : 'text-[#d8429d]'}`}>
-                  {price}
-                </span>
-                <a
-                  href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
-                    popular
-                      ? 'bg-white text-[#d8429d] hover:bg-white/90'
-                      : 'bg-[#d8429d] text-white hover:bg-[#c2357f]'
-                  }`}
-                >
-                  {t('pricelist.book')}
-                </a>
-              </div>
+              <span className={`font-display text-2xl font-bold ${popular ? 'text-white' : 'text-[#d8429d]'}`}>
+                {price}
+              </span>
             </div>
           ))}
         </div>

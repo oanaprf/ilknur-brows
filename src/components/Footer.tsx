@@ -23,20 +23,23 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-[#7e1b60] text-white">
+    <footer className="bg-[#101828] text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="font-black text-white text-2xl tracking-[0.15em] uppercase mb-3">
-              Ilknur Brows
+            <div className="flex items-baseline gap-1.5 mb-3">
+              <span className="font-black text-white text-2xl tracking-tight uppercase">ILKNUR</span>
+              <span className="font-light text-white/80 text-2xl tracking-[0.2em] uppercase">
+                Brows
+              </span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-5">
               {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/ilknur_brows?igsh=MXV6cmY5OW1raTBubA=="
+                href="https://www.instagram.com/ilknur_brows"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -73,23 +76,32 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-white/60">
               <li className="flex items-start gap-2">
-                <span className="text-[#f9a8d4] mt-0.5">📍</span>
-                <span>Strada Florilor 12, București</span>
+                <span className="text-[#f9a8d4] mt-0.5 shrink-0">📍</span>
+                <span>București, România</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#f9a8d4]">📞</span>
-                <a href="tel:+40700000000" className="hover:text-white transition-colors">+40 700 000 000</a>
+                <span className="text-[#f9a8d4] shrink-0">📞</span>
+                <a href="tel:+40787778505" className="hover:text-white transition-colors">
+                  +40 787 778 505
+                </a>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-[#f9a8d4]">✉</span>
-                <a href="mailto:hello@ilknurbrows.ro" className="hover:text-white transition-colors">hello@ilknurbrows.ro</a>
+                <span className="text-[#f9a8d4] shrink-0">✉</span>
+                <a
+                  href="mailto:hello@ilknurbrows.ro"
+                  className="hover:text-white transition-colors"
+                >
+                  hello@ilknurbrows.ro
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
-          <span>© {new Date().getFullYear()} Ilknur Brows. {t('footer.rights')}</span>
+          <span>
+            © {new Date().getFullYear()} Ilknur Brows. {t('footer.rights')}
+          </span>
           <div className="flex items-center gap-4">
             <span>{t('footer.madeWith')}</span>
             <LanguageSwitcher />

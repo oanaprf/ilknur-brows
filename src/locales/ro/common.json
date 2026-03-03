@@ -1,20 +1,49 @@
 {
   "nav": {
-    "services": "SERVICII",
-    "about": "DESPRE MINE",
-    "gallery": "GALERIE",
-    "courses": "CURSURI",
-    "bookNow": "PROGRAMEAZĂ"
+    "services": "Servicii",
+    "gallery": "Galerie",
+    "pricelist": "Prețuri",
+    "courses": "Cursuri",
+    "bookNow": "Programează-te"
   },
   "hero": {
-    "headline": "În căutarea sprâncenelor perfecte?",
-    "subtitle": "Pasionată de frumusețea naturală, creez sprâncene armonioase care îți pun în valoare trăsăturile.",
-    "cta": "Programează-te acum"
+    "greeting": "Bună, sunt",
+    "headline": "Precizie. Frumusețe. Încredere.",
+    "subtitle": "Pasionată de frumusețea naturală, creez sprâncene armonioase care îți pun în valoare trăsăturile unice și îți oferă încredere zilnic.",
+    "cta": "Programează-te",
+    "viewGallery": "Vezi Galeria",
+    "stats": {
+      "clients": { "value": "200+", "label": "Clienți mulțumiți" },
+      "sessions": { "value": "500+", "label": "Sesiuni realizate" },
+      "reviews": { "value": "100+", "label": "Recenzii 5★" }
+    }
   },
   "services": {
-    "label": "SERVICII",
+    "label": "Servicii",
     "heading": "Contur. Simetrie. Eleganță.",
-    "description": "Fie că îți dorești sprâncene perfecte, gene curbate și vizibil mai dese sau un machiaj semipermanent impecabil, aceste servicii se completează armonios pentru a-ți evidenția frumusețea unică și a-ți oferi încredere zilnic."
+    "description": "Fie că îți dorești sprâncene perfecte, gene curbate sau un machiaj semipermanent impecabil, serviciile se completează armonios pentru a-ți evidenția frumusețea unică.",
+    "items": {
+      "shaping": {
+        "name": "Pensat & Contur",
+        "desc": "Formă perfectă adaptată structurii feței tale, cu tehnici precise de epilare și conturare."
+      },
+      "lamination": {
+        "name": "Laminare",
+        "desc": "Sprâncene și gene ridicate, fixate și vizibil mai dense, cu efect durabil de până la 8 săptămâni."
+      },
+      "micropigmentation": {
+        "name": "Micropigmentare",
+        "desc": "Machiaj semipermanent pentru sprâncene perfecte la trezire — microblading, powder brows sau tehnica combo."
+      }
+    }
+  },
+  "pricelist": {
+    "label": "Prețuri transparente",
+    "heading": "Listă de prețuri",
+    "description": "Tratamente profesionale personalizate pentru a-ți pune în valoare frumusețea naturală. Fiecare sesiune este o investiție în tine.",
+    "book": "Rezervă",
+    "mostPopular": "Cel mai popular",
+    "footnote": "Toate prețurile includ o consultație gratuită. Prețurile pentru retușuri se aplică în decurs de 6 luni de la tratamentul inițial."
   },
   "gallery": {
     "label": "Portofoliu",
@@ -28,20 +57,17 @@
     "heading": "Recenzii",
     "rating": "5.0 · 200+ recenzii"
   },
-  "pricelist": {
-    "label": "Prețuri transparente",
-    "heading": "Listă de prețuri",
-    "description": "Fără costuri ascunse. Ceea ce vezi este ceea ce plătești.",
-    "book": "Rezervă",
-    "mostPopular": "Cel mai popular",
-    "footnote": "Toate prețurile includ o consultație gratuită. Prețurile pentru retușuri se aplică în decurs de 6 luni de la tratamentul inițial."
-  },
   "courses": {
     "label": "Educație",
     "heading": "Învață de la cei mai buni",
     "description": "Transformă-ți pasiunea pentru sprâncene într-o carieră înfloritoare cu programele practice ale lui Ilknur.",
     "enroll": "Înscrie-te acum",
-    "bestSeller": "Cel mai vândut"
+    "bestSeller": "Cel mai vândut",
+    "items": {
+      "basic": { "title": "Basic Brow Shaping" },
+      "advanced": { "title": "Advanced Microblading" },
+      "business": { "title": "Brow Business Bootcamp" }
+    }
   },
   "footer": {
     "tagline": "Artă premium pentru sprâncene — unde precizia întâlnește frumusețea.",
@@ -55,6 +81,6 @@
       "courses": "Cursuri"
     },
     "rights": "Toate drepturile rezervate.",
-    "madeWith": "Făcut cu ♥ pentru sprâncene perfecte"
+    "madeWith": "Făcut cu ♥"
   }
 }

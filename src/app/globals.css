@@ -16,24 +16,83 @@ html {
 
 body {
   font-family: var(--font-inter), sans-serif;
-  background: #fdf6f9;
+  background: #ffffff;
   color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0);    }
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes floatY {
-  0%, 100% { transform: translateY(0px);   }
-  50%       { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes floatX {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
 }
 
 @keyframes spinSlow {
-  from { transform: rotate(0deg);   }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .animate-fade-in-up {
@@ -42,8 +101,20 @@ body {
 .animate-float {
   animation: floatY 5s ease-in-out infinite;
 }
+.animate-float-x {
+  animation: floatX 6s ease-in-out infinite;
+}
 .animate-spin-slow {
   animation: spinSlow 20s linear infinite;
+}
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+.animate-slide-left {
+  animation: slideInLeft 0.9s ease forwards;
+}
+.animate-slide-right {
+  animation: slideInRight 0.9s ease forwards;
 }
 
 .font-display {

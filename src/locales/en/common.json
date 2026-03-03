@@ -1,20 +1,49 @@
 {
   "nav": {
-    "services": "SERVICES",
-    "about": "ABOUT",
-    "gallery": "GALLERY",
-    "courses": "COURSES",
-    "bookNow": "BOOK NOW"
+    "services": "Services",
+    "gallery": "Gallery",
+    "pricelist": "Pricing",
+    "courses": "Courses",
+    "bookNow": "Book Now"
   },
   "hero": {
-    "headline": "In search of perfect brows?",
-    "subtitle": "Passionate about natural beauty, I create harmonious brows that enhance your unique features.",
-    "cta": "Book Now"
+    "greeting": "Hi, I'm",
+    "headline": "Precision. Beauty. Confidence.",
+    "subtitle": "Passionate about natural beauty, I create harmonious brows that enhance your unique features and give you confidence every day.",
+    "cta": "Book Now",
+    "viewGallery": "View Gallery",
+    "stats": {
+      "clients": { "value": "200+", "label": "Happy Clients" },
+      "sessions": { "value": "500+", "label": "Sessions Done" },
+      "reviews": { "value": "100+", "label": "5★ Reviews" }
+    }
   },
   "services": {
-    "label": "SERVICES",
+    "label": "Services",
     "heading": "Contour. Symmetry. Elegance.",
-    "description": "Whether you want perfect brows, visibly fuller lashes or flawless semi-permanent makeup, these services complement each other to highlight your unique beauty and give you daily confidence."
+    "description": "Whether you want perfect brows, fuller lashes, or flawless semi-permanent makeup, these services complement each other to highlight your unique beauty.",
+    "items": {
+      "shaping": {
+        "name": "Shaping & Contouring",
+        "desc": "Perfect shape tailored to your face structure, with precise waxing and threading techniques."
+      },
+      "lamination": {
+        "name": "Lamination",
+        "desc": "Lifted, set, and visibly fuller brows and lashes with lasting results up to 8 weeks."
+      },
+      "micropigmentation": {
+        "name": "Micropigmentation",
+        "desc": "Semi-permanent makeup for wake-up-ready brows — microblading, powder brows, or combo technique."
+      }
+    }
+  },
+  "pricelist": {
+    "label": "Transparent Pricing",
+    "heading": "Price List",
+    "description": "Professional treatments tailored to enhance your natural beauty. Every session is an investment in yourself.",
+    "book": "Book",
+    "mostPopular": "Most Popular",
+    "footnote": "All prices include a free consultation. Touch-up pricing applies within 6 months of initial treatment."
   },
   "gallery": {
     "label": "Portfolio",
@@ -28,20 +57,17 @@
     "heading": "Reviews",
     "rating": "5.0 · 200+ reviews"
   },
-  "pricelist": {
-    "label": "Transparent Pricing",
-    "heading": "Price List",
-    "description": "No hidden fees. What you see is what you pay.",
-    "book": "Book",
-    "mostPopular": "Most Popular",
-    "footnote": "All prices include a free consultation. Touch-up pricing applies within 6 months of initial treatment."
-  },
   "courses": {
     "label": "Education",
     "heading": "Learn from the Best",
     "description": "Turn your passion for brows into a thriving career with Ilknur's hands-on training programs.",
     "enroll": "Enroll Now",
-    "bestSeller": "Best Seller"
+    "bestSeller": "Best Seller",
+    "items": {
+      "basic": { "title": "Basic Brow Shaping" },
+      "advanced": { "title": "Advanced Microblading" },
+      "business": { "title": "Brow Business Bootcamp" }
+    }
   },
   "footer": {
     "tagline": "Premium brow artistry — where precision meets beauty.",
@@ -55,6 +81,6 @@
       "courses": "Courses"
     },
     "rights": "All rights reserved.",
-    "madeWith": "Made with ♥ for perfect brows"
+    "madeWith": "Made with ♥"
   }
 }
