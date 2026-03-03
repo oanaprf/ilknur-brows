@@ -25,9 +25,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-black/30 backdrop-blur-xl border-b border-white/10 shadow-lg shadow-black/20'
-          : 'bg-transparent'
+        scrolled ? 'bg-[#d8429d]/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -41,7 +39,7 @@ export default function Navbar() {
             <a
               key={key}
               href={href}
-              className="text-xs font-semibold text-white/70 hover:text-white transition-colors duration-200 tracking-[0.12em]"
+              className="text-xs font-semibold text-white/90 hover:text-white transition-colors duration-200 tracking-[0.12em]"
             >
               {t(key)}
             </a>
@@ -53,7 +51,7 @@ export default function Navbar() {
             href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center px-6 py-2.5 rounded-full text-xs font-bold tracking-[0.12em] text-white border border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/15 hover:border-white/30 transition-all duration-200"
+            className="hidden md:inline-flex items-center px-6 py-2.5 bg-white text-[#d8429d] text-xs font-bold rounded-full hover:bg-white/90 transition-colors duration-200 tracking-[0.12em]"
           >
             {t('nav.bookNow')}
           </a>
@@ -82,13 +80,13 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-black/50 backdrop-blur-xl border-t border-white/10 px-6 pb-5 pt-3 space-y-1">
+        <div className="md:hidden bg-[#d8429d] border-t border-white/20 px-6 pb-5 pt-3 space-y-1">
           {NAV_LINKS.map(({ key, href }) => (
             <a
               key={key}
               href={href}
               onClick={() => setOpen(false)}
-              className="block py-2.5 text-xs font-semibold text-white/70 hover:text-white transition-colors tracking-[0.12em]"
+              className="block py-2.5 text-xs font-semibold text-white hover:text-white/80 transition-colors tracking-[0.12em]"
             >
               {t(key)}
             </a>
@@ -97,7 +95,7 @@ export default function Navbar() {
             href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
             target="_blank"
             rel="noopener noreferrer"
-            className="block mt-3 text-center px-6 py-3 rounded-full text-xs font-bold tracking-[0.12em] text-white border border-white/20 bg-white/5"
+            className="block mt-3 text-center px-6 py-3 bg-white text-[#d8429d] text-xs font-bold rounded-full tracking-[0.12em]"
           >
             {t('nav.bookNow')}
           </a>

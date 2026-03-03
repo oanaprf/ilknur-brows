@@ -51,23 +51,18 @@ export default function ReviewsSection() {
   const { t } = useTranslation()
 
   return (
-    <section id="reviews" className="py-24 relative">
-      {/* Section orb */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
-        <div className="absolute top-1/2 -translate-y-1/2 right-[-10%] w-[500px] h-[500px] rounded-full bg-[#7e1b60]/20 blur-[100px]" />
-      </div>
-
+    <section id="reviews" className="py-24 bg-[#fdf0f8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-[#d8429d] text-sm font-semibold tracking-[0.2em] uppercase">
             {t('reviews.label')}
           </span>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mt-3">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mt-3">
             {t('reviews.heading')}
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
             <Stars count={5} />
-            <span className="text-white/40 text-sm font-medium">{t('reviews.rating')}</span>
+            <span className="text-gray-500 text-sm font-medium">{t('reviews.rating')}</span>
           </div>
         </div>
 
@@ -75,27 +70,27 @@ export default function ReviewsSection() {
           {REVIEWS.map(({ name, rating, text, service }) => (
             <div
               key={name}
-              className="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:bg-white/8 hover:border-[#d8429d]/25 hover:shadow-lg hover:shadow-[#d8429d]/10 hover:-translate-y-0.5 transition-all duration-300"
+              className="group bg-white border border-gray-100 rounded-2xl p-6 hover:border-[#d8429d]/25 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               {/* Top row: stars + service badge */}
               <div className="flex items-center justify-between mb-4">
                 <Stars count={rating} />
-                <span className="text-xs font-medium text-[#f9a8d4] bg-[#d8429d]/15 backdrop-blur-sm px-2.5 py-1 rounded-full border border-[#d8429d]/20">
+                <span className="text-xs font-medium text-[#d8429d] bg-[#fdf0f8] px-2.5 py-1 rounded-full border border-[#d8429d]/15">
                   {service}
                 </span>
               </div>
 
               {/* Review text */}
-              <p className="text-white/55 text-sm leading-relaxed italic mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed italic mb-6">
                 &ldquo;{text}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-white/8">
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-50">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#d8429d] to-[#f9a8d4] flex items-center justify-center text-white text-xs font-bold shrink-0">
                   {name[0]}
                 </div>
-                <span className="font-semibold text-white/80 text-sm">{name}</span>
+                <span className="font-semibold text-gray-800 text-sm">{name}</span>
               </div>
             </div>
           ))}
