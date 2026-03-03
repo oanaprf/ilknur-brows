@@ -39,19 +39,11 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <svg key={i} className="w-4 h-4 fill-[#d8429d]" viewBox="0 0 20 20">
+        <svg key={i} className="w-3.5 h-3.5 fill-[#d8429d]" viewBox="0 0 20 20">
           <path d="M10 1l2.4 6.8H20l-5.7 4.1 2.2 6.8L10 14.7l-6.5 4 2.2-6.8L0 7.8h7.6z" />
         </svg>
       ))}
     </div>
-  )
-}
-
-function QuoteIcon() {
-  return (
-    <svg className="w-8 h-8 text-[#d8429d] opacity-25" viewBox="0 0 32 32" fill="currentColor">
-      <path d="M6 20c0-4.4 2.8-8.4 8.4-12L16 10c-3.6 2-5.4 4.2-5.6 6.6.4-.2.9-.2 1.6-.2 2.2 0 4 1.8 4 4S14.2 24 12 24s-6-1.8-6-4zm14 0c0-4.4 2.8-8.4 8.4-12L30 10c-3.6 2-5.4 4.2-5.6 6.6.4-.2.9-.2 1.6-.2 2.2 0 4 1.8 4 4S28.2 24 26 24s-6-1.8-6-4z" />
-    </svg>
   )
 }
 
@@ -74,27 +66,31 @@ export default function ReviewsSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {REVIEWS.map(({ name, rating, text, service }) => (
             <div
               key={name}
-              className="bg-surface rounded-3xl p-7 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              className="group bg-white border border-gray-100 rounded-2xl p-6 hover:border-[#d8429d]/25 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
-              <div className="flex items-start justify-between mb-4">
-                <QuoteIcon />
-                <span className="text-xs font-semibold text-[#d8429d] bg-[#fdf0f8] px-3 py-1 rounded-full">
+              {/* Top row: stars + service badge */}
+              <div className="flex items-center justify-between mb-4">
+                <Stars count={rating} />
+                <span className="text-xs font-medium text-[#d8429d] bg-[#fdf0f8] px-2.5 py-1 rounded-full border border-[#d8429d]/15">
                   {service}
                 </span>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed mb-5">&ldquo;{text}&rdquo;</p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#d8429d] to-[#f9a8d4] flex items-center justify-center text-white text-sm font-bold">
-                    {name[0]}
-                  </div>
-                  <span className="font-semibold text-gray-900 text-sm">{name}</span>
+
+              {/* Review text */}
+              <p className="text-gray-600 text-sm leading-relaxed italic mb-6">
+                &ldquo;{text}&rdquo;
+              </p>
+
+              {/* Author */}
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-50">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#d8429d] to-[#f9a8d4] flex items-center justify-center text-white text-xs font-bold shrink-0">
+                  {name[0]}
                 </div>
-                <Stars count={rating} />
+                <span className="font-semibold text-gray-800 text-sm">{name}</span>
               </div>
             </div>
           ))}

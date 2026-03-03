@@ -4,14 +4,17 @@ import { useTranslation } from 'react-i18next'
 
 const SERVICES = [
   {
+    num: '01',
     key: 'PENSAT',
     subtitles: ['Formă', 'Întreținere'],
   },
   {
+    num: '02',
     key: 'LAMINARE',
     subtitles: ['Gene', 'Sprâncene'],
   },
   {
+    num: '03',
     key: 'MICRO PIGMENTARE',
     subtitles: ['Powder'],
   },
@@ -36,21 +39,29 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* Service circles */}
-        <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
-          {SERVICES.map(({ key, subtitles }) => (
-            <div key={key} className="flex flex-col items-center">
-              <div className="w-56 h-56 rounded-full bg-[#e8d5de] flex flex-col items-center justify-center text-center px-6 hover:bg-[#dfc8d4] transition-colors duration-300 cursor-pointer shadow-md hover:shadow-lg">
-                <span className="font-black text-lg text-gray-800 tracking-wide leading-tight mb-2">
-                  {key}
-                </span>
-                <div className="flex flex-col items-center gap-0.5">
-                  {subtitles.map((sub) => (
-                    <span key={sub} className="text-gray-500 text-sm">
-                      {sub}
-                    </span>
-                  ))}
-                </div>
+        {/* Service cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {SERVICES.map(({ num, key, subtitles }) => (
+            <div
+              key={key}
+              className="group relative bg-white border border-gray-100 rounded-2xl p-8 hover:border-[#d8429d]/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden"
+            >
+              {/* Top accent line on hover */}
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#d8429d] to-[#f9a8d4] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <span className="text-[#d8429d]/20 font-black text-6xl leading-none block mb-6 group-hover:text-[#d8429d]/40 transition-colors duration-300">
+                {num}
+              </span>
+              <h3 className="font-black text-xl text-gray-900 tracking-wide leading-tight mb-4">
+                {key}
+              </h3>
+              <div className="flex flex-col gap-2">
+                {subtitles.map((sub) => (
+                  <span key={sub} className="text-gray-400 text-sm flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#d8429d] inline-block shrink-0" />
+                    {sub}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
