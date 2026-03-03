@@ -58,7 +58,9 @@ export default function PricelistSection() {
                   {price}
                 </span>
                 <a
-                  href="#contact"
+                  href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                     popular
                       ? 'bg-white text-[#d8429d] hover:bg-white/90'

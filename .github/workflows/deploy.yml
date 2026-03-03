@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/align-header-hero-cta-d3GMn]
 
 permissions:
   contents: read

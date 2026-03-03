@@ -106,7 +106,7 @@ export default function CoursesSection() {
                   {price}
                 </div>
                 <a
-                  href="#contact"
+                  href="tel:0787778505"
                   className={`block text-center px-6 py-3.5 rounded-full font-semibold text-sm transition-all duration-200 ${
                     idx === 1
                       ? 'bg-white text-[#d8429d] hover:bg-white/90'
