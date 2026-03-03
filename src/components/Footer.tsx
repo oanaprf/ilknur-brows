@@ -23,7 +23,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-[#7e1b60] text-white">
+    <footer className="relative bg-black/40 backdrop-blur-xl border-t border-white/10 text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="font-black text-white text-2xl tracking-[0.15em] uppercase mb-3">
               Ilknur Brows
             </div>
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-5">
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs mb-5">
               {t('footer.tagline')}
             </p>
             <div className="flex gap-3">
@@ -40,7 +40,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white transition-all duration-200"
+                className="w-10 h-10 rounded-full bg-white/8 border border-white/10 flex items-center justify-center text-white/50 hover:bg-white/15 hover:text-white hover:border-white/20 transition-all duration-200"
               >
                 <InstagramIcon />
               </a>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4 tracking-wide text-sm uppercase">
+            <h4 className="font-semibold text-white/80 mb-4 tracking-wide text-sm uppercase">
               {t('footer.quickLinks')}
             </h4>
             <ul className="space-y-2.5">
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li key={key}>
                   <a
                     href={href}
-                    className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+                    className="text-sm text-white/40 hover:text-white/80 transition-colors duration-200"
                   >
                     {t(key)}
                   </a>
@@ -68,27 +68,27 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-white mb-4 tracking-wide text-sm uppercase">
+            <h4 className="font-semibold text-white/80 mb-4 tracking-wide text-sm uppercase">
               {t('footer.contact')}
             </h4>
-            <ul className="space-y-3 text-sm text-white/60">
+            <ul className="space-y-3 text-sm text-white/40">
               <li className="flex items-start gap-2">
                 <span className="text-[#f9a8d4] mt-0.5">📍</span>
                 <span>Strada Florilor 12, București</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[#f9a8d4]">📞</span>
-                <a href="tel:+40700000000" className="hover:text-white transition-colors">+40 700 000 000</a>
+                <a href="tel:+40700000000" className="hover:text-white/80 transition-colors">+40 700 000 000</a>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-[#f9a8d4]">✉</span>
-                <a href="mailto:hello@ilknurbrows.ro" className="hover:text-white transition-colors">hello@ilknurbrows.ro</a>
+                <a href="mailto:hello@ilknurbrows.ro" className="hover:text-white/80 transition-colors">hello@ilknurbrows.ro</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+        <div className="mt-12 pt-6 border-t border-white/8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/25">
           <span>© {new Date().getFullYear()} Ilknur Brows. {t('footer.rights')}</span>
           <div className="flex items-center gap-4">
             <span>{t('footer.madeWith')}</span>

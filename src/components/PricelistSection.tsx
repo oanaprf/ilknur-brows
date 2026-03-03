@@ -16,16 +16,21 @@ export default function PricelistSection() {
   const { t } = useTranslation()
 
   return (
-    <section id="pricelist" className="py-24 bg-[#fdf0f8]">
+    <section id="pricelist" className="py-24 relative">
+      {/* Section orb */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-[#d8429d]/8 blur-[120px]" />
+      </div>
+
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-[#d8429d] text-sm font-semibold tracking-[0.2em] uppercase">
             {t('pricelist.label')}
           </span>
-          <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mt-3">
+          <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mt-3">
             {t('pricelist.heading')}
           </h2>
-          <p className="text-gray-400 mt-4 text-lg">{t('pricelist.description')}</p>
+          <p className="text-white/40 mt-4 text-lg">{t('pricelist.description')}</p>
         </div>
 
         <div className="space-y-3">
@@ -34,21 +39,21 @@ export default function PricelistSection() {
               key={name}
               className={`relative flex items-center justify-between p-5 sm:p-6 rounded-2xl transition-all duration-200 ${
                 popular
-                  ? 'bg-[#d8429d] text-white shadow-xl shadow-[#d8429d]/30'
-                  : 'bg-surface hover:shadow-md shadow-sm'
+                  ? 'bg-[#d8429d]/20 backdrop-blur-xl border border-[#d8429d]/40 shadow-xl shadow-[#d8429d]/15'
+                  : 'bg-white/5 backdrop-blur-xl border border-white/10 hover:bg-white/8 hover:border-white/20'
               }`}
             >
               {popular && (
-                <div className="absolute -top-3 left-6 px-3 py-0.5 bg-white rounded-full text-[#d8429d] text-xs font-bold tracking-widest uppercase shadow-sm">
+                <div className="absolute -top-3 left-6 px-3 py-0.5 rounded-full text-xs font-bold tracking-widest uppercase bg-[#d8429d] text-white shadow-lg shadow-[#d8429d]/40">
                   {t('pricelist.mostPopular')}
                 </div>
               )}
 
               <div className="flex-1">
-                <span className={`font-display text-lg font-semibold ${popular ? 'text-white' : 'text-gray-900'}`}>
+                <span className={`font-display text-lg font-semibold ${popular ? 'text-white' : 'text-white/90'}`}>
                   {name}
                 </span>
-                <span className={`ml-3 text-sm ${popular ? 'text-white/70' : 'text-gray-400'}`}>
+                <span className={`ml-3 text-sm ${popular ? 'text-white/60' : 'text-white/40'}`}>
                   {duration}
                 </span>
               </div>
@@ -64,7 +69,7 @@ export default function PricelistSection() {
                   className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                     popular
                       ? 'bg-white text-[#d8429d] hover:bg-white/90'
-                      : 'bg-[#d8429d] text-white hover:bg-[#c2357f]'
+                      : 'bg-white/10 text-white border border-white/20 hover:bg-white/15'
                   }`}
                 >
                   {t('pricelist.book')}
@@ -74,7 +79,7 @@ export default function PricelistSection() {
           ))}
         </div>
 
-        <p className="text-center text-gray-400 text-sm mt-8">{t('pricelist.footnote')}</p>
+        <p className="text-center text-white/30 text-sm mt-8">{t('pricelist.footnote')}</p>
       </div>
     </section>
   )
