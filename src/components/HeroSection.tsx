@@ -44,7 +44,9 @@ export default function HeroSection() {
 
           <div className="flex items-center gap-6 flex-wrap">
             <a
-              href="#calendar"
+              href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-7 py-3 bg-white text-[#d8429d] text-xs font-bold rounded-full hover:bg-white/90 transition-colors duration-200 tracking-[0.12em] whitespace-nowrap"
             >
               {t('nav.bookNow')}

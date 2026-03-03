@@ -48,7 +48,9 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#calendar"
+            href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center px-6 py-2.5 bg-white text-[#d8429d] text-xs font-bold rounded-full hover:bg-white/90 transition-colors duration-200 tracking-[0.12em]"
           >
             {t('nav.bookNow')}
@@ -90,7 +92,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#calendar"
+            href="https://www.notino.ro/saloane/ilknur-brows/?gad_source=1&gad_campaignid=22770392632&gbraid=0AAAAAqJ-m9AolaIzTWeUETUGaFnYojKXh&gclid=CjwKCAiAqprNBhB6EiwAMe3yhpDcNJLm1EVMRAPfXm3MdMfBfA1wZ3TG7_d8kKN3vyrCGoYhAqy8PhoC5WQQAvD_BwE"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block mt-3 text-center px-6 py-3 bg-white text-[#d8429d] text-xs font-bold rounded-full tracking-[0.12em]"
           >
             {t('nav.bookNow')}
