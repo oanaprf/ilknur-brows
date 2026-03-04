@@ -53,12 +53,12 @@
     "items": {
       "browStyling": "Stilizat sprâncene",
       "browStylingThinning": "Stilizarea și rărirea sprâncenelor",
-      "browStylingDye": "Stilizarea și vopsirea cu vopsea",
-      "browStylingHenna": "Stilizarea și vopsirea cu henna",
+      "browStylingDye": "Stilizarea și vopsirea sprâncenelor cu vopsea",
+      "browStylingHenna": "Stilizarea și vopsirea sprâncenelor cu henna",
       "browLaminationStyling": "Laminarea și stilizarea sprâncenelor",
-      "browLaminationStylingTinting": "Laminarea, stilizarea și vopsirea",
+      "browLaminationStylingTinting": "Laminarea, stilizarea și vopsirea sprâncenelor",
       "browBleachingStyling": "Decolorarea și stilizarea sprâncenelor",
-      "browBleachingStylingToning": "Decolorarea, stilizarea și tonarea",
+      "browBleachingStylingToning": "Decolorarea, stilizarea și tonarea sprâncenelor",
       "comboLamination": "Laminare Combo (gene + sprâncene)",
       "lashLaminationBrowStyling": "Laminare gene + stilizare sprâncene cu vopsea"
     }
