@@ -3,13 +3,16 @@
     "services": "Services",
     "gallery": "Gallery",
     "pricelist": "Pricing",
+    "reviews": "Reviews",
     "courses": "Courses",
+    "location": "Location",
+    "info": "Info",
     "bookNow": "Book Now"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "headline": "Precision. Beauty. Confidence.",
-    "subtitle": "Passionate about natural beauty, I create harmonious brows that enhance your unique features and give you confidence every day.",
+    "subtitle": "I create fabulous brows with symmetric results and 100% on-tone harmonious pigment — from fine cashmere blonde shades to the boldest tones. The expressiveness and symmetry of your face deserve the best brows.",
     "cta": "Book Now",
     "viewGallery": "View Gallery",
     "stats": {
@@ -20,20 +23,23 @@
   },
   "services": {
     "label": "Services",
-    "heading": "Contour. Symmetry. Elegance.",
-    "description": "Whether you want perfect brows, fuller lashes, or flawless semi-permanent makeup, these services complement each other to highlight your unique beauty.",
+    "heading": "Styling. Lamination. Bleaching.",
+    "description": "Every session guarantees symmetric results and 100% on-tone harmonious pigment — disciplined brows straight from the magazine pages, plus creative bleaching from fine cashmere blonde to the boldest brown or black tones.",
     "items": {
       "shaping": {
-        "name": "Shaping & Contouring",
-        "desc": "Perfect shape tailored to your face structure, with precise waxing and threading techniques."
+        "name": "Brow Styling",
+        "desc": "Contouring and defining brows with tweezers and thread, tinting with dye or henna, and thinning unruly hairs for an airy, harmonious brow.",
+        "tags": ["With Dye", "With Henna", "Thinning"]
       },
       "lamination": {
         "name": "Lamination",
-        "desc": "Lifted, set, and visibly fuller brows and lashes with lasting results up to 8 weeks."
+        "desc": "Complex lamination & styling treatment for defined, thick, well-groomed brows lasting 4–6 weeks. Also available for lashes — natural elongation and curl effect, lasting 6–8 weeks.",
+        "tags": ["Brows", "Lashes", "Combo"]
       },
-      "micropigmentation": {
-        "name": "Micropigmentation",
-        "desc": "Semi-permanent makeup for wake-up-ready brows — microblading, powder brows, or combo technique."
+      "bleaching": {
+        "name": "Bleaching & Toning",
+        "desc": "Brow bleaching evens out colour and creates a bright, modern look. Paired with toning for the desired shade — from fine cashmere blonde to bold brown or black tones.",
+        "tags": ["Bleaching", "Toning", "Styling"]
       }
     }
   },
@@ -43,7 +49,19 @@
     "description": "Professional treatments tailored to enhance your natural beauty. Every session is an investment in yourself.",
     "book": "Book",
     "mostPopular": "Most Popular",
-    "footnote": "All prices include a free consultation. Touch-up pricing applies within 6 months of initial treatment."
+    "footnote": "Lamination must not be performed sooner than 3 months between sessions and is not suitable on trimmed or coarse hair. Henna is not recommended on dry skin.",
+    "items": {
+      "browStyling": "Brow Styling",
+      "browStylingThinning": "Brow Styling & Thinning",
+      "browStylingDye": "Brow Styling & Dye Tinting",
+      "browStylingHenna": "Brow Styling & Henna Tinting",
+      "browLaminationStyling": "Brow Lamination & Styling",
+      "browLaminationStylingTinting": "Lamination, Styling & Tinting",
+      "browBleachingStyling": "Brow Bleaching & Styling",
+      "browBleachingStylingToning": "Bleaching, Styling & Toning",
+      "comboLamination": "Combo Lamination (Lashes + Brows)",
+      "lashLaminationBrowStyling": "Lash Lamination + Brow Styling with Dye"
+    }
   },
   "gallery": {
     "label": "Portfolio",
@@ -55,7 +73,10 @@
   "reviews": {
     "label": "Client Love",
     "heading": "Reviews",
-    "rating": "5.0 · 200+ reviews"
+    "rating": "5.0 · 20+ reviews",
+    "verified": "Verified review",
+    "showMore": "See all reviews",
+    "showLess": "Show less"
   },
   "courses": {
     "label": "Education",
@@ -69,8 +90,44 @@
       "business": { "title": "Brow Business Bootcamp" }
     }
   },
+  "location": {
+    "label": "Our Studio",
+    "heading": "Your transformation space",
+    "description": "A modern, welcoming studio designed with your comfort and relaxation in mind.",
+    "addressLabel": "Address",
+    "address": "Bulevardul Eroilor 11, Voluntari, 077190",
+    "parking": "Parking",
+    "parkingNote": "Parking is available in the vicinity of the studio.",
+    "openMaps": "Open in Google Maps"
+  },
+  "info": {
+    "label": "Useful Information",
+    "heading": "Working Hours",
+    "schedule": {
+      "title": "Working hours",
+      "days": {
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday",
+        "sunday": "Sunday"
+      },
+      "hours": {
+        "weekday": "10:00 – 19:00",
+        "friday": "10:00 – 17:00",
+        "closed": "Closed"
+      }
+    },
+    "payment": {
+      "title": "Payment information",
+      "cash": "Cash payment",
+      "card": "Card payment"
+    }
+  },
   "footer": {
-    "tagline": "Premium brow artistry — where precision meets beauty.",
+    "tagline": "The brow fairy — creating fabulous brows and passionately teaching styling courses.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "links": {
@@ -78,7 +135,9 @@
       "pricelist": "Pricelist",
       "gallery": "Gallery",
       "reviews": "Reviews",
-      "courses": "Courses"
+      "courses": "Courses",
+      "location": "Location",
+      "info": "Info"
     },
     "rights": "All rights reserved.",
     "madeWith": "Made with ♥"

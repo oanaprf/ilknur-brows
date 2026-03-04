@@ -3,13 +3,16 @@
 import { useTranslation } from 'react-i18next'
 
 const PRICES = [
-  { name: 'Microblading', duration: '90 min', price: '800 RON', popular: true },
-  { name: 'Powder Brows', duration: '90 min', price: '700 RON', popular: false },
-  { name: 'Combo Brows', duration: '120 min', price: '900 RON', popular: false },
-  { name: 'Brow Lamination', duration: '60 min', price: '200 RON', popular: false },
-  { name: 'Brow Tinting', duration: '30 min', price: '80 RON', popular: false },
-  { name: 'Wax & Thread', duration: '20 min', price: '50 RON', popular: false },
-  { name: 'Touch-up (6 months)', duration: '60 min', price: '400 RON', popular: false },
+  { nameKey: 'pricelist.items.browStyling', duration: '30 min', price: '80 RON', popular: false },
+  { nameKey: 'pricelist.items.browStylingThinning', duration: '1h', price: '120 RON', popular: false },
+  { nameKey: 'pricelist.items.browStylingDye', duration: '1h', price: '150 RON', popular: false },
+  { nameKey: 'pricelist.items.browStylingHenna', duration: '1h', price: '170 RON', popular: false },
+  { nameKey: 'pricelist.items.browLaminationStyling', duration: '1h', price: '190 RON', popular: false },
+  { nameKey: 'pricelist.items.browLaminationStylingTinting', duration: '1h', price: '210 RON', popular: true },
+  { nameKey: 'pricelist.items.browBleachingStyling', duration: '1h', price: '130 RON', popular: false },
+  { nameKey: 'pricelist.items.browBleachingStylingToning', duration: '1h', price: '160 RON', popular: false },
+  { nameKey: 'pricelist.items.comboLamination', duration: '2h', price: '330 RON', popular: false },
+  { nameKey: 'pricelist.items.lashLaminationBrowStyling', duration: '2h 30min', price: '300 RON', popular: false },
 ]
 
 export default function PricelistSection() {
@@ -29,9 +32,9 @@ export default function PricelistSection() {
         </div>
 
         <div className="space-y-3">
-          {PRICES.map(({ name, duration, price, popular }) => (
+          {PRICES.map(({ nameKey, duration, price, popular }) => (
             <div
-              key={name}
+              key={nameKey}
               className={`relative flex items-center justify-between p-5 sm:p-6 rounded-2xl transition-all duration-200 ${
                 popular
                   ? 'bg-[#d8429d] text-white shadow-lg shadow-[#d8429d]/20'
@@ -46,7 +49,7 @@ export default function PricelistSection() {
 
               <div className="flex-1">
                 <span className={`font-display text-lg font-semibold ${popular ? 'text-white' : 'text-gray-900'}`}>
-                  {name}
+                  {t(nameKey)}
                 </span>
                 <span className={`ml-3 text-sm ${popular ? 'text-white/70' : 'text-gray-400'}`}>
                   {duration}

@@ -6,9 +6,10 @@ import Link from 'next/link'
 
 const NAV_LINKS = [
   { key: 'nav.services', href: '#services' },
-  { key: 'nav.gallery', href: '#gallery' },
-  { key: 'nav.pricelist', href: '#pricelist' },
+  { key: 'nav.reviews', href: '#reviews' },
   { key: 'nav.courses', href: '#courses' },
+  { key: 'nav.location', href: '#location' },
+  { key: 'nav.info', href: '#info' },
 ]
 
 export default function Navbar() {

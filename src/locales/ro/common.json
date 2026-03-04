@@ -3,13 +3,16 @@
     "services": "Servicii",
     "gallery": "Galerie",
     "pricelist": "Prețuri",
+    "reviews": "Recenzii",
     "courses": "Cursuri",
+    "location": "Locație",
+    "info": "Info",
     "bookNow": "Programează-te"
   },
   "hero": {
     "greeting": "Bună, sunt",
     "headline": "Precizie. Frumusețe. Încredere.",
-    "subtitle": "Pasionată de frumusețea naturală, creez sprâncene armonioase care îți pun în valoare trăsăturile unice și îți oferă încredere zilnic.",
+    "subtitle": "Creez sprâncene fabuloase cu rezultate simetrice și pigment armonios 100% on-tone — de la nuanțe fine blond cashmere până la cele mai îndrăznețe tonuri. Expresivitatea și simetria chipului tău merită cele mai bune sprâncene.",
     "cta": "Programează-te",
     "viewGallery": "Vezi Galeria",
     "stats": {
@@ -20,20 +23,23 @@
   },
   "services": {
     "label": "Servicii",
-    "heading": "Contur. Simetrie. Eleganță.",
-    "description": "Fie că îți dorești sprâncene perfecte, gene curbate sau un machiaj semipermanent impecabil, serviciile se completează armonios pentru a-ți evidenția frumusețea unică.",
+    "heading": "Stilizare. Laminare. Decolorare.",
+    "description": "La fiecare sesiune mă asigur că ofer rezultate simetrice și pigment armonios 100% on-tone, fire disciplinate ca în reviste, dar și decolorare creativă. Dacă îți dorești calitate și profesionalism, rezultatul final va fi garantat unul Wow!",
     "items": {
       "shaping": {
-        "name": "Pensat & Contur",
-        "desc": "Formă perfectă adaptată structurii feței tale, cu tehnici precise de epilare și conturare."
+        "name": "Stilizare sprâncene",
+        "desc": "Conturarea și definirea sprâncenelor cu pensetă și ață, vopsire cu vopsea sau henna, și rărirea firelor rebele pentru o sprânceană aerisită și armonioasă.",
+        "tags": ["Cu vopsea", "Cu henna", "Rărire"]
       },
       "lamination": {
         "name": "Laminare",
-        "desc": "Sprâncene și gene ridicate, fixate și vizibil mai dense, cu efect durabil de până la 8 săptămâni."
+        "desc": "Tratament complex de laminare și stilizare pentru sprâncene definite, groase și aranjate timp de 4–6 săptămâni. Disponibil și pentru gene — efect de alungire și curbare natural, durabil 6–8 săptămâni.",
+        "tags": ["Sprâncene", "Gene", "Combo"]
       },
-      "micropigmentation": {
-        "name": "Micropigmentare",
-        "desc": "Machiaj semipermanent pentru sprâncene perfecte la trezire — microblading, powder brows sau tehnica combo."
+      "bleaching": {
+        "name": "Decolorare & Tonat",
+        "desc": "Decolorarea sprâncenelor uniformizează culoarea și creează un aspect deschis și modern. Completată cu tonare pentru nuanța dorită — de la blond cashmere fin la tonuri îndrăznețe de maro sau negru.",
+        "tags": ["Decolorare", "Tonare", "Stilizare"]
       }
     }
   },
@@ -43,7 +49,19 @@
     "description": "Tratamente profesionale personalizate pentru a-ți pune în valoare frumusețea naturală. Fiecare sesiune este o investiție în tine.",
     "book": "Rezervă",
     "mostPopular": "Cel mai popular",
-    "footnote": "Toate prețurile includ o consultație gratuită. Prețurile pentru retușuri se aplică în decurs de 6 luni de la tratamentul inițial."
+    "footnote": "Laminarea nu se realizează mai devreme de 3 luni între ședințe și nu se aplică pe fire tunse sau fir gros. Henna nu este recomandată pe pielea uscată.",
+    "items": {
+      "browStyling": "Stilizat sprâncene",
+      "browStylingThinning": "Stilizarea și rărirea sprâncenelor",
+      "browStylingDye": "Stilizarea și vopsirea cu vopsea",
+      "browStylingHenna": "Stilizarea și vopsirea cu henna",
+      "browLaminationStyling": "Laminarea și stilizarea sprâncenelor",
+      "browLaminationStylingTinting": "Laminarea, stilizarea și vopsirea",
+      "browBleachingStyling": "Decolorarea și stilizarea sprâncenelor",
+      "browBleachingStylingToning": "Decolorarea, stilizarea și tonarea",
+      "comboLamination": "Laminare Combo (gene + sprâncene)",
+      "lashLaminationBrowStyling": "Laminare gene + stilizare sprâncene cu vopsea"
+    }
   },
   "gallery": {
     "label": "Portofoliu",
@@ -55,7 +73,10 @@
   "reviews": {
     "label": "Ce spun clienții",
     "heading": "Recenzii",
-    "rating": "5.0 · 200+ recenzii"
+    "rating": "5.0 · 20+ recenzii",
+    "verified": "Recenzie verificată",
+    "showMore": "Vezi toate recenziile",
+    "showLess": "Restrânge"
   },
   "courses": {
     "label": "Educație",
@@ -69,8 +90,44 @@
       "business": { "title": "Brow Business Bootcamp" }
     }
   },
+  "location": {
+    "label": "Salonul nostru",
+    "heading": "Spațiul tău de transformare",
+    "description": "Un salon modern și primitor, creat special pentru confortul și relaxarea ta.",
+    "addressLabel": "Adresă",
+    "address": "Bulevardul Eroilor 11, Voluntari, 077190",
+    "parking": "Parcare",
+    "parkingNote": "Se poate parca în proximitatea salonului.",
+    "openMaps": "Deschide în Google Maps"
+  },
+  "info": {
+    "label": "Informații utile",
+    "heading": "Program de lucru",
+    "schedule": {
+      "title": "Program de lucru",
+      "days": {
+        "monday": "Luni",
+        "tuesday": "Marți",
+        "wednesday": "Miercuri",
+        "thursday": "Joi",
+        "friday": "Vineri",
+        "saturday": "Sâmbătă",
+        "sunday": "Duminică"
+      },
+      "hours": {
+        "weekday": "10:00 – 19:00",
+        "friday": "10:00 – 17:00",
+        "closed": "Închis"
+      }
+    },
+    "payment": {
+      "title": "Informații de plată",
+      "cash": "Plata în numerar",
+      "card": "Plata cu cardul"
+    }
+  },
   "footer": {
-    "tagline": "Artă premium pentru sprâncene — unde precizia întâlnește frumusețea.",
+    "tagline": "Zâna sprâncenelor — creez sprâncene fabuloase și predau cu pasiune cursuri de stilizare.",
     "quickLinks": "Linkuri rapide",
     "contact": "Contact",
     "links": {
@@ -78,7 +135,9 @@
       "pricelist": "Listă prețuri",
       "gallery": "Galerie",
       "reviews": "Recenzii",
-      "courses": "Cursuri"
+      "courses": "Cursuri",
+      "location": "Locație",
+      "info": "Info"
     },
     "rights": "Toate drepturile rezervate.",
     "madeWith": "Făcut cu ♥"

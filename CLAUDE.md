@@ -39,6 +39,7 @@ docs/              # Documentation
 - Supported languages: Romanian (ro), English (en)
 - Language toggle in the Footer
 - Translation keys in `src/i18n/locales/[lang]/common.json`
+- Every string displayed should have translation in every supported language
 
 ## Guidelines
 

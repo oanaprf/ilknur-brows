@@ -11,15 +11,31 @@ function InstagramIcon() {
   )
 }
 
+function TikTokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z" />
+    </svg>
+  )
+}
+
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+    </svg>
+  )
+}
+
 export default function Footer() {
   const { t } = useTranslation()
 
   const quickLinks = [
     { key: 'footer.links.services', href: '#services' },
-    { key: 'footer.links.pricelist', href: '#pricelist' },
-    { key: 'footer.links.gallery', href: '#gallery' },
     { key: 'footer.links.reviews', href: '#reviews' },
     { key: 'footer.links.courses', href: '#courses' },
+    { key: 'footer.links.location', href: '#location' },
+    { key: 'footer.links.info', href: '#info' },
   ]
 
   return (
@@ -46,6 +62,24 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white transition-all duration-200"
               >
                 <InstagramIcon />
+              </a>
+              <a
+                href="https://www.tiktok.com/@ilknur_brows"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white transition-all duration-200"
+              >
+                <TikTokIcon />
+              </a>
+              <a
+                href="https://www.facebook.com/browtistailknur/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-white/20 hover:text-white transition-all duration-200"
+              >
+                <FacebookIcon />
               </a>
             </div>
           </div>
