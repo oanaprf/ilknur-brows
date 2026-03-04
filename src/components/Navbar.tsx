@@ -49,7 +49,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ml-auto md:ml-0">
           <button
             onClick={() => setOpen(!open)}
             className={`md:hidden p-2 transition-colors ${scrolled ? 'text-white hover:text-white/70' : 'text-gray-700 hover:text-[#d8429d]'}`}
